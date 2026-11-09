@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Privacy policy for the personal Sys academic organizer.">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy — Sys</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Sys home"><span class="mark" aria-hidden="true">S</span><span>Sys</span></a>
+      <nav aria-label="Main navigation"><a href="./">Home</a><a aria-current="page" href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    </header>
+    <main class="document">
+      <p class="eyebrow">Effective November 9, 2026</p>
+      <h1>Privacy Policy</h1>
+      <p class="lead">Sys is a personal, local-first desktop application for academic information organization. This policy describes the current implemented behavior, and distinguishes it from planned features.</p>
+      <h2>1. Data accessed</h2>
+      <p>When the owner authorizes a connection, Sys can retrieve academic information through the Instituto Superior Técnico Fénix API, including course and enrollment information, timetables and evaluations.</p>
+      <p>The Gmail integration requests <code>https://www.googleapis.com/auth/gmail.readonly</code>. It can read messages, selected headers, labels, timestamps, message and thread identifiers, message body text, and attachment metadata in authorized mailboxes. It does not download attachment contents in its current implementation; it cannot send, modify, archive or delete messages.</p>
+      <p>Each personal or institutional Google account must be authorized separately. Accounts do not inherit each other's access permissions. Google Calendar and Google Drive are planned, not yet implemented. When added, they will request separate, purpose-limited read-only permissions, with updated disclosures.</p>
+      <h2>2. Purpose and use</h2>
+      <p>Authorized data is used solely to synchronize, organize and make the owner's information searchable within Sys. It is not used to advertise, sell data, build advertising profiles, monitor third parties or train generalized AI or machine-learning models.</p>
+      <h2>3. Storage and security</h2>
+      <p>Synced records are stored in a SQLite database on the owner's Windows computer. OAuth credentials and access/refresh tokens are stored in Windows Credential Manager. No Google OAuth codes, tokens, messages or academic documents are sent to this GitHub Pages website.</p>
+      <p>Sys does not currently operate a hosted service for synchronized data, and does not transfer synced Gmail messages to ChatGPT or other external AI services. A future optional AI integration would require a separate implementation and appropriate privacy review and disclosures before any Google data is transmitted outside the local computer.</p>
+      <h2>4. Sharing and disclosure</h2>
+      <p>Sys does not sell or share Google user data with advertisers, data brokers, or unrelated third parties. Requests to Google APIs and Fénix are necessary to access the owner's authorized information. The owner controls the local installation. Any future third-party integration will be assessed separately under applicable Google API rules.</p>
+      <h2>5. Retention, deletion and revocation</h2>
+      <p>Records remain on the owner's computer until the local database is deleted or managed by the owner. The owner can revoke Google's authorization from their <a href="https://myaccount.google.com/connections" rel="noopener noreferrer">Google Account connections</a>. Revocation stops future authorized API access, but does not automatically delete previously synchronized local records; local deletion is a separate action. Workspace administrators may impose additional access restrictions.</p>
+      <h2>6. This informational website</h2>
+      <p>The public website contains no login, tracking scripts, analytics, advertising, or forms, and does not set its own cookies. It is hosted by GitHub Pages; GitHub may process technical request information, such as IP addresses and security logs, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+      <h2>7. Google API Limited Use</h2>
+      <p>Sys's use and transfer of information received from Google APIs complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only for the features described here, with authorized scopes and user control.</p>
+      <h2>8. Updates and contact</h2>
+      <p>This policy may be updated as integrations are implemented or their data practices change. The effective date above identifies the current version. For questions, use the developer contact details shown in the Google OAuth consent screen.</p>
+      <p class="back"><a href="./">Back to Sys home</a></p>
+    </main>
+    <footer><span>© 2026 Sys · Personal project</span><span><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></span></footer>
+  </div>
+</body>
+</html>
